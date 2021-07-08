@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./STYLES/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./STYLES/tailwind.css">
+    <title>Diccionario</title>
+</head>
+<body>
+    <header class="">
+        <section id="header" class="object-center flex textos-header">
+            <h1>Diccionario Urbano (inglés)</h1>
+            <p>Introduce la palabra que deseas encontrar en el buscador</p>
+        </section>
+    </header>
+
+    <div class="container mx-auto">
+        <h1 class="mt-10 text-center text-4xl font-bold text-white">Buscador</h1>
+
+    <form id="formulario" class="max-w-lg mx-auto mt-10 rounded p-6 ">
+            <div>
+                <input 
+                    type="text" 
+                    class="w-full p-3 rounded placeholder-gray-900 "
+                    id="busqueda"
+                    placeholder="Car, Orange, Black"
+                >
+
+                <input 
+                    type="submit"
+                    value="Buscar"
+                    class="buscar bg-gray-800 text-white font-bold w-full uppercase  mt-5 p-3 hover:bg-gray-700 cursor-pointer text-center"
+                >
+
+            </div>
+    </form>
+
+    <div id="resultado" class="mt-10 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
+    
+    </div>
+
+
+    </div>
+
+    <footer>
+        Todos los derechos reservados. Copyright. 2021
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="./JS/app.js" type="module"></script>
+    
+</body>
+
+
+</html>
